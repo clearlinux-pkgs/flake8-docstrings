@@ -4,7 +4,7 @@
 #
 Name     : flake8-docstrings
 Version  : 0.2.5
-Release  : 2
+Release  : 3
 URL      : https://pypi.python.org/packages/source/f/flake8-docstrings/flake8-docstrings-0.2.5.tar.gz
 Source0  : https://pypi.python.org/packages/source/f/flake8-docstrings/flake8-docstrings-0.2.5.tar.gz
 Summary  : Extension for flake8 which uses pep257 to check docstrings
