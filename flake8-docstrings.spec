@@ -4,7 +4,7 @@
 #
 Name     : flake8-docstrings
 Version  : 1.0.2
-Release  : 9
+Release  : 10
 URL      : http://pypi.debian.net/flake8-docstrings/flake8-docstrings-1.0.2.tar.gz
 Source0  : http://pypi.debian.net/flake8-docstrings/flake8-docstrings-1.0.2.tar.gz
 Summary  : Extension for flake8 which uses pydocstyle to check docstrings
