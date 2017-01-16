@@ -4,7 +4,7 @@
 #
 Name     : flake8-docstrings
 Version  : 1.0.2
-Release  : 10
+Release  : 11
 URL      : http://pypi.debian.net/flake8-docstrings/flake8-docstrings-1.0.2.tar.gz
 Source0  : http://pypi.debian.net/flake8-docstrings/flake8-docstrings-1.0.2.tar.gz
 Summary  : Extension for flake8 which uses pydocstyle to check docstrings
@@ -42,13 +42,15 @@ python components for the flake8-docstrings package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1484546592
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
+export SOURCE_DATE_EPOCH=1484546592
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
