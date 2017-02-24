@@ -4,18 +4,23 @@
 #
 Name     : flake8-docstrings
 Version  : 1.0.3
-Release  : 13
+Release  : 14
 URL      : http://pypi.debian.net/flake8-docstrings/flake8-docstrings-1.0.3.tar.gz
 Source0  : http://pypi.debian.net/flake8-docstrings/flake8-docstrings-1.0.3.tar.gz
 Summary  : Extension for flake8 which uses pydocstyle to check docstrings
 Group    : Development/Tools
 License  : MIT
 Requires: flake8-docstrings-python
+Requires: flake8
+Requires: flake8-polyfill
+Requires: pydocstyle
 BuildRequires : flake8
+BuildRequires : flake8-polyfill
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pluggy
 BuildRequires : py-python
+BuildRequires : pydocstyle
 BuildRequires : pytest
 BuildRequires : python-dev
 BuildRequires : python3-dev
@@ -32,7 +37,6 @@ flake8_.
 %package python
 Summary: python components for the flake8-docstrings package.
 Group: Default
-Requires: flake8
 
 %description python
 python components for the flake8-docstrings package.
@@ -43,12 +47,12 @@ python components for the flake8-docstrings package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487856174
+export SOURCE_DATE_EPOCH=1487904887
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487856174
+export SOURCE_DATE_EPOCH=1487904887
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
