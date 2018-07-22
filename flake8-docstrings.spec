@@ -4,7 +4,7 @@
 #
 Name     : flake8-docstrings
 Version  : 1.3.0
-Release  : 18
+Release  : 19
 URL      : https://files.pythonhosted.org/packages/a5/8c/93d397e26d732ff4978b0c1568bd9ef02f0ef7aac5763ec5c9b25ed252f5/flake8-docstrings-1.3.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a5/8c/93d397e26d732ff4978b0c1568bd9ef02f0ef7aac5763ec5c9b25ed252f5/flake8-docstrings-1.3.0.tar.gz
 Summary  : Extension for flake8 which uses pydocstyle to check docstrings
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532242697
+export SOURCE_DATE_EPOCH=1532271229
 python3 setup.py build -b py3
 
 %install
