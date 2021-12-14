@@ -4,7 +4,7 @@
 #
 Name     : flake8-docstrings
 Version  : 1.6.0
-Release  : 48
+Release  : 49
 URL      : https://files.pythonhosted.org/packages/c1/a6/b8a953fb256ee383fed9094f7270ab75cd637c23749c211f0e6b3552a31e/flake8-docstrings-1.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c1/a6/b8a953fb256ee383fed9094f7270ab75cd637c23749c211f0e6b3552a31e/flake8-docstrings-1.6.0.tar.gz
 Summary  : Extension for flake8 which uses pydocstyle to check docstrings
